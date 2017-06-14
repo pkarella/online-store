@@ -1,3 +1,9 @@
 <p>
-  marketplace works!
+This is the Market Place. Buy Something!
 </p>
+<div *ngFor="let album of albums" (click)="goToDetailPage(album)" class="panel panel-default">
+  <div class="panel-body">
+      <h3><em>{{album.title}}</em> by {{album.artist}}</h3>
+  </div>
+
+</div>
